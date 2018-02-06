@@ -112,7 +112,6 @@ describe('TemplateFormComponent', () => {
         fixture.detectChanges();
         fixture.whenStable().then(() => {
             const inputs = fixture.debugElement.queryAll(By.css('input'));
-            console.log(inputs);
             inputs.forEach(element => {
                 if (element.properties["ng-reflect-is-disabled"]) {
                     expect(element.properties["ng-reflect-is-disabled"]).toBe('true');
