@@ -17,6 +17,8 @@ import { UsersComponent } from './users/users.component';
 // import { NavComponent } from './nav/nav.component';
 import { HighlightDirective } from './highlight.directive';
 import { DataService } from "./http-services/data.service";
+import { BetterHighlightDirective } from './directive/app.directive';
+import { DirectiveComponent } from './directive/directive.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,10 @@ import { DataService } from "./http-services/data.service";
     UserDetailsComponent,
     VoterComponent,
     UsersComponent,
+    BetterHighlightDirective,
     //  NavComponent,
-    HighlightDirective
+    HighlightDirective,
+    DirectiveComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
